@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    list-style-type: none;
+}
+
+body {
+    background-color: #5669e6;
+    color: #cfbaba;
+}
+.app_container {
+    margin: 5rem auto;
+    width: 22rem;
+    position: relative;
+    border-radius: 0.8rem;
+    background-color: black;
+    color: antiquewhite;
+    min-height: 35rem;
+    max-height: 40rem;
+    padding: 1rem;
+}
+.top_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #297286;
+    margin-bottom: 1rem;
+}
+.top_bar .more img {
+    cursor: pointer;
+}
+.invert {
+    filter: invert(100%);
+}
+.search_box {
+    display: flex;
+    gap: 0.5rem;
+    background-color: #505050;
+    padding: 0.3rem;
+    border-radius: .8rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.search_input {
+    background-color: #505050;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+}
+.note_container {
+    overflow-y: auto;
+    max-height: 25rem;
+    gap: 0.5rem;
+}
+.note_container::-webkit-scrollbar {
+    width: 0;
+}
+.note_item {
+    margin: 1rem 0;
+    background-color: #272727;
+    padding: .6rem;
+    border-radius: 0.8rem;
+}
+.note_item .description {
+    font-size: 0.8rem;
+    color: #b0b0b0;
+    margin-bottom: 0.5rem;
+}
+.note_item .note_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.note_header_icon{
+    cursor: pointer;
+}
+
+.top_bar .more {
+    position: relative;
+}
+.top_bar .more .dropdown {
+    position: absolute;
+    top: 1.25rem;
+    right: 0;
+    background-color: #272727;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: none;
+    width: max-content;
+}
+.dropdown ul li {
+    list-style-type : none;
+}
+
+button{
+    background: transparent;
+    outline: none;
+    border: 0;
+    color: #ffffff;
+    padding: 0.2rem;
+    margin: 0.3rem 0;
+}
+
+button:hover {
+    color: rgb(65, 65, 65);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.note_item .more{
+    position: relative;
+}
+.note_dropdown {
+    position: absolute;
+    background-color: black;
+    top: 1.25rem;
+    right: 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: none;
+    width: max-content;
+}
+.add_icon {
+    text-align: center;
+    margin-top: 1rem;
+}
+.add_icon #addBtn {
+    cursor: pointer;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 45%;
+}
+
+#addBtn:hover {
+    filter: invert(50%);
+    transition: all .2s ease-in;
+}
+
+.DownEditor {
+    position: absolute;
+    bottom: 0;
+    height: 28rem;
+    background-color:black;
+    display: none;
+}
+.DownEditor input, .DownEditor textarea {
+    background-color: transparent;
+    padding: .5rem;
+    border: none;
+    width: 100%;
+    resize: none;
+    outline: none;
+}
+
+.DownEditor .title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+.DownEditor .data{
+    color: #ffffff;
+}
+
+.done_icon{
+    text-align:end;
+}
+.done_icon #doneBtn {
+    cursor: pointer;
+    margin-top: .5rem;
+    margin-right: .5rem;
+}
+.done_icon #doneBtn:hover {
+    filter:invert(40%);
+    transition: all .2s ease-in;
+}
+img{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 .3rem;
+}

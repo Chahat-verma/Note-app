@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="app_container">
+        <div class="top_bar">
+            <h2>Note App</h2>
+            <div class="more">
+                <div class="dropdown">
+                    <ul>
+                        <li><button id="deleteAll">Delete All</button></li>
+                        <li><button id="mode">Change mode</button></li>
+                    </ul>
+                </div>
+                <img src="./icons/more-vertical.svg" class="invert more_icons" alt="More">
+            </div>
+        </div>
+        <div class="search_box">
+            <div class="search_icon">
+                <img src="./icons/search.svg" class="invert" alt="Search" >
+            </div>
+            <input type="text" placeholder="Search notes..." class="search_input" id="query">
+        </div>
+        <div class="note_container">
+        </div>
+        <div class="add_icon">
+            <img src="./icons/plus-circle.svg" class="invert" id="addBtn" alt="Add Note">
+        </div>
+        <div class="DownEditor">
+            <div class="done_icon">
+                <img src="./icons/check-square.svg" class="invert" id="doneBtn" alt="" >
+            </div>
+            <input type="text" placeholder="Note Title" class="title">
+
+            <textarea placeholder="your Notes" class="data" rows="15"></textarea>
+        </div>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
